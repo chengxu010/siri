@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4eL-8s-HlJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4aS-in-Pox"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XoS-r5-HV7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abc.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIb-jk-67q">
+                                <rect key="frame" x="4" y="14" width="41" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="DZp-xY-IFK"/>
+                                    <constraint firstAttribute="height" constant="28" id="zda-XU-YVr"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5V0-dF-e6O">
+                                <rect key="frame" x="53" y="13" width="179" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QzL-sI-h7s"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0L-k2-tLe">
+                                <rect key="frame" x="244" y="12" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.70588235290000001" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dDv-qx-3WN"/>
+                                    <constraint firstAttribute="height" constant="30" id="gJE-DI-bwb"/>
+                                </constraints>
+                                <state key="normal" title="确定"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="ObA-dk-sSI" eventType="touchUpInside" id="m8k-Zq-WAy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NIb-jk-67q" firstAttribute="top" secondItem="4eL-8s-HlJ" secondAttribute="bottom" constant="14" id="A13-ep-rGH"/>
+                            <constraint firstItem="5V0-dF-e6O" firstAttribute="top" secondItem="4eL-8s-HlJ" secondAttribute="bottom" constant="13" id="FIc-Ku-fZm"/>
+                            <constraint firstItem="5V0-dF-e6O" firstAttribute="leading" secondItem="NIb-jk-67q" secondAttribute="trailing" constant="8" id="G4O-gP-upT"/>
+                            <constraint firstItem="m0L-k2-tLe" firstAttribute="top" secondItem="4eL-8s-HlJ" secondAttribute="bottom" constant="12" id="TC5-il-qgt"/>
+                            <constraint firstItem="NIb-jk-67q" firstAttribute="leading" secondItem="XoS-r5-HV7" secondAttribute="leading" constant="4" id="Wjk-LG-wzm"/>
+                            <constraint firstItem="m0L-k2-tLe" firstAttribute="trailing" secondItem="XoS-r5-HV7" secondAttribute="trailingMargin" id="s06-6n-oQO"/>
+                            <constraint firstItem="m0L-k2-tLe" firstAttribute="leading" secondItem="5V0-dF-e6O" secondAttribute="trailing" constant="12" id="sRp-4J-YAs"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="60"/>
+                    <connections>
+                        <outlet property="txtField" destination="5V0-dF-e6O" id="8GM-GX-fvD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="115.14242878560721"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abc.png" width="120" height="120"/>
+    </resources>
+</document>
